@@ -1,7 +1,65 @@
-# KACTL
+# KACTL Python 🐍
+
+A comprehensive Python conversion of KACTL, [KTH](https://en.wikipedia.org/wiki/KTH_Royal_Institute_of_Technology)'s ICPC team reference document. This provides competitive programming algorithms in Python for teams who prefer Python in ICPC-style competitions.
+
+**🎉 Major Progress**: 65+ algorithms converted! Core algorithms production-ready.
+
+## Current Status: 36% Complete
+
+### ✅ Complete Chapters (100%)
+- **Data Structures** (13/13) - Fenwick Trees, Segment Trees, DSU, etc.
+- **Combinatorial** (2/2) - Permutations, Multinomial coefficients
+
+### 🟢 High Progress (>50%)
+- **Strings** (7/9 - 78%) - KMP, Z-func, Hashing, Suffix Array, Aho-Corasick, Manacher
+- **Number Theory** (11/17 - 65%) - Primes, Modular Arithmetic, GCD, CRT, Factorization
+- **Graph** (17/29 - 59%) - Max Flow, Matching, SCC, 2-SAT, LCA, Euler Walks
+
+### 🔴 In Progress (<50%)
+- **Geometry** (2/50+ - 4%) - Point operations, Convex Hull
+- **Numerical** (0/20 - 0%) - Not started
+- **Various** (1/10 - 10%) - Minimal progress
+
+📊 **Overall**: ~65 out of ~180 files converted
+
+See [`PROGRESS_REPORT.md`](PROGRESS_REPORT.md) for detailed breakdown or [`STATUS_BOARD.md`](STATUS_BOARD.md) for visual dashboard.
+
+## Quick Start
+
+### For Contributors
+
+See `CONVERSION_GUIDE.md` for detailed instructions on converting algorithms from C++ to Python.
+
+```bash
+# Generate templates for a chapter
+python batch_convert.py content <chapter-name>
+
+# Update chapter.tex after conversion
+python batch_convert.py content --update-tex <chapter-name>
+```
+
+### For Users
+
+Once conversion is complete, compile the PDF:
+
+```bash
+make kactl.pdf
+```
+
+The generated PDF will contain Python implementations of all algorithms.
+
+## Why Python?
+
+- **Simplicity**: Cleaner syntax, easier to type under time pressure
+- **Built-ins**: Rich standard library (heapq, bisect, collections, itertools)
+- **No Memory Management**: Focus on algorithms, not pointers
+- **Arbitrary Precision**: No integer overflow concerns
+- **Popular**: Increasingly common in competitive programming
+
+## Original KACTL
 
 This repo hosts KACTL, [KTH](https://en.wikipedia.org/wiki/KTH_Royal_Institute_of_Technology)'s ICPC team reference document.
-It consists of 25 pages of copy-pasteable C++ code, for use in ICPC-style programming competitions.
+The original C++ version consists of 25 pages of copy-pasteable C++ code.
 
 See [kactl.pdf](./kactl.pdf) for the final, browsable version, and [content/](./content/) for raw source code.
 
